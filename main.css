@@ -1,0 +1,718 @@
+:root {
+    --logo-font : ;
+    --links-font : 1em;
+    --h1-font : 3em; 
+    --line-height-h1 : 1.5;
+    --h2-font : 2.25em;
+    --h3-font : 1.75em;
+    --headings : ;
+    --main-text-font :1em ;
+    --main-text-line-height : 1.375em;
+
+    --logo-font-mb : ;
+    --links-font-mb : 1em;
+    --h1-font-mb : 2.2em;
+    --line-height-h1-mb: 1.35em;
+    --h2-font-mb : 1.625em;
+    --h3-font-mb: 1.6em;
+    --headings-mb : ;
+    --main-text-mb : 1em;
+    --main-text-height-mb : 1.25em;
+
+    --font-family : 'Source Sans Pro', sans-serif;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ...fonts... */
+
+h1 {
+    font-size: var(--h1-font);
+    line-height: var(--line-height-h1);
+}
+
+h2 {
+    font-size: var(--h2-font);
+}
+
+h3 {
+    font-size: var(--h3-font);
+}
+
+
+/* ..End of fonts */
+
+img {
+    border-radius: 20px;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--main-text-font);
+    line-height: var( --main-text-line-height);
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2.5em;
+}
+
+.sm-link {
+    display: none;
+}
+
+.menu-icon {
+    font-weight: 700;
+}
+
+.close-icon {
+    display: none;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.links li {
+    padding: 0 1em;
+}
+
+.links-a {
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    color: rgb(199, 190, 190);
+}
+
+#contact {
+    display: none;
+}
+
+.book-session a {
+    background-color: black;
+    color: white;
+    padding: .75em;
+    border-radius: 7px;
+    border-top-left-radius: 20px;
+    transition: all .5s ease-out;
+}
+
+.book-session a:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: black;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: .85em 3.5em;
+    margin: 1.5em 0;
+    border-radius: 7px;
+    border-top-left-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.toggle-theme {
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.moon-icon {
+    font-size: 30px;
+    transform: rotate(-140deg);
+    position: relative;
+    top: -8px;
+}
+
+.moon-icon:hover {
+    color: rgb(199, 190, 190);
+}
+
+.section-1 {
+    background: url(img/11\ \(2\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10em 0;
+    line-height: 2;
+    color: white;
+}
+
+.section-1 .text {
+    margin-left: 2.5em;
+}
+
+.section-2 {
+    text-align: center;
+    margin: 2.5em;
+}
+
+.title-text {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+    font-size: var(--h3-font);
+}
+
+.section-2 img {
+    max-width: 100%;
+    padding: 1em;
+}
+
+.second-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-flex {
+    display: flex;
+}
+
+.section-2 .grid a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b8b4b4);
+}
+
+
+.section-3 {
+    background: rgb(240, 236, 236);
+    padding: 2.5em;
+}
+
+
+.section-3 .title-text {
+    margin-top: 1em;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.category-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 50%)
+}
+
+
+.category-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.7;
+    font-size: var(--h2-font);
+}
+
+
+.weddings .category-text, 
+.nature .category-text {
+    padding: 0 1.5em;
+}
+
+
+.category-title {
+    padding-bottom: .7em;
+}
+
+
+.section-3 img {
+    width: 100%;
+    padding: 1em;
+    object-fit: scale-down;
+}
+
+
+.category-images {
+    display: flex;
+}
+
+
+.section-3 .category-images a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b8b4b4);
+}
+
+
+.view-btn {
+    text-align: center;
+}
+
+/* Start About Me*/
+
+
+section.section-4 {
+    background: url(./img/Screenshot\ 2022-04-10\ 001632.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+
+.about-title-text {
+    margin-bottom: 2em;
+    padding-top: 4rem;
+    text-align: center;
+    font-size: var(--h3-font);
+    color: white;
+}
+
+
+.about-container {
+    background-color: #9283832d;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.about-body-header {
+    padding: 1rem;
+}
+
+.about-body {
+    padding: 2rem 1rem; 
+}
+
+.about-body p {
+    font-size: 1.7em;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.blaq {
+    margin-top: 2rem;
+}
+
+#more {display: none;}
+
+/*End About*/
+
+
+footer {
+    text-align: center;
+    background: black;
+    color: rgb(88, 88, 88);
+    padding: 3em;
+}
+
+.wrapper {
+    margin: 2em 20em;
+}
+
+
+footer img {
+    width: 90%;
+}
+
+.footer-img-flex {
+    display: flex;
+}
+
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.footer-links li {
+    padding: 0 1em;
+}
+
+
+.footer-links a{
+    text-decoration: none;
+    color: grey; 
+}
+
+.footer-links a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.footer-text {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    line-height: 1.4;
+}
+
+.footer-text h2{
+    font-weight: 200;
+}
+
+.footer-text p{
+    padding-top: 20px;
+}
+
+
+.footer-logo {
+    width: 100px;
+    margin-top: 2rem;
+}
+
+
+
+
+/* Start Contact Section */
+
+.hero-section {
+    margin: 200px 200px;
+}
+
+.contact-flex {
+    display: flex;
+    
+}
+
+.contact-heading {
+    margin-top: 3rem;
+    margin-right: 3.5rem;
+}
+
+.hero-section .hero-text h1{
+    font-size: 70px;
+}
+
+.contact-heading h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-info p {
+    font-size: 35px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.contact-info a{
+    color: black;
+}
+
+.contact-info p a:hover{
+    color: rgb(141, 136, 136);}
+
+
+/* End Contact Section */
+
+/* Start Dark Mode */
+
+.dark-body {
+    background: url(img/Blaq-40.jpg);
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--main-text-font);
+    line-height: var( --main-text-line-height);
+    transition: all .6s ease-in;
+}
+
+.dark-section-3 {
+    background: rgba(240, 236, 236, 0.24);
+    padding: 2.5em;
+}
+
+.dark-category-text {
+    font-size: .7em;
+    line-height: 1;
+    color: black;
+}
+
+
+.dark-li-a {
+    text-decoration: none;
+    color:white
+}
+
+/* End Dark Mode */
+
+
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 600px) {
+    
+    h1 {
+        font-size: var(--h1-font-mb);
+        line-height: var(--line-height-h1-mb);
+    }
+    
+    h2 {
+        font-size: var(--h2-font-mb);
+    }
+    
+    h3 {
+        font-size: var(--h3-font-mb);
+        line-height: 1em;
+    }
+
+    p {
+        font-size: 1.7em;
+        line-height: var(--main-text-line-height);
+    }
+   
+
+    .footer-links li {
+        padding: .4em ;
+    }
+
+    .footer-img-flex {
+        display: none;
+    }
+
+    button {
+        padding: .6em 1.5em;
+    }
+
+    .work-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-flex {
+        display: block;
+    }
+
+    .section-3 .portrait {
+        border-bottom: 1px solid rgb(43, 42, 42);
+       
+    }
+
+    .section-3 .nature {
+        border-top: 1px solid rgb(43, 42, 42);
+        margin-top: 1rem;
+        padding-top: .5rem;
+    }
+
+    .about-body p {
+        font-size: .9em;
+        line-height: 1.5;
+        font-weight: normal;  
+    }
+
+    .about-container {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .footer-logo {
+        width: 60px;
+        margin-top: 2rem;
+    }
+
+    .moon-icon {
+        font-size: 15px;
+        transform: rotate(-140deg);
+    }
+
+    .category-text .category-title h3 {
+        font-size: 2.5em;
+    }
+
+    .section-3 .title-text {
+        margin-top: 0;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+   
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-attachment: fixed;
+        color: black;
+    }
+
+    .category-text {
+        font-size: .7em;
+        line-height: 1;
+        color: black;
+    }
+
+    .section-3 {
+        background: rgba(240, 236, 236, 0.24);
+        padding: 2.5em;
+    }
+
+
+    .links {
+        display: none;
+        padding-top: 70px;
+        padding-left: 50px;
+     }
+ 
+ 
+    .links li {
+         padding: 0;
+         color: black;
+         padding: 5px 0;
+    }
+ 
+
+    .book-session a {
+       display: none;
+    }
+
+    #contact {
+        display: block;
+    }
+ 
+    .sm-link {
+         display: block;
+         position: relative;
+         bottom: 0px;
+         cursor: pointer;
+     }
+
+ .moon-icon {
+        font-size: 20px;
+        transform: rotate(-140deg);
+        position: relative;
+        top: 0px;
+    }
+
+
+    /* Start nav mobile */
+
+    nav {
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+   }
+
+    .hide {
+        visibility: hidden;
+    }
+
+    /* End nav mobile */
+
+
+    /* Start Contact Section */
+
+    
+    .hero-section {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-text {
+        margin-top: 3rem;
+    }
+
+    .contact-flex {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .contact-heading {
+        margin-top: 1rem;
+        margin-right: .5rem;
+    }
+
+    .hero-section .hero-text h1{
+        font-size: 30px;
+    }
+
+    .hero-contacts {
+        margin-top: 3rem;
+    }
+
+    .contact-heading h4 {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .contact-info {
+        margin-top: 0;
+    }
+
+    .contact-info p {
+        font-size: 15px;
+        font-weight: 200;
+        text-decoration: underline;
+    }
+
+
+    .contact-info p a:hover{
+        color: rgb(141, 136, 136);}
+
+
+    /* End Contact Section */
+
+}
+
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 1.9em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .category-text {
+        font-size: 1.1em;
+    }
+
+    .category-text .category-main-text p{
+        line-height: 1.5;
+    }
+
+    .footer-img-flex {
+        display: none;
+    }
+}
