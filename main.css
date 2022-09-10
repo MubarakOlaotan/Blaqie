@@ -61,9 +61,6 @@ body {
     line-height: var( --main-text-line-height);
 }
 
-#contact-body {
-    font-size: .8em;
-}
 
 .logo a {
     color: black;
