@@ -57,7 +57,7 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: .75em;
+    font-size: .8em;
     line-height: var( --main-text-line-height);
 }
 
@@ -147,7 +147,7 @@ button:hover {
 
 .toggle-theme {
     position: absolute;
-    top: 33px;
+    top: 27px;
     right: 10px;
     cursor: pointer;
 }
@@ -437,7 +437,7 @@ footer img {
     background-attachment: fixed;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: .75em;
+    font-size: .8em;
     line-height: var( --main-text-line-height);
     transition: all .2s ease-in;
 }
