@@ -7,7 +7,7 @@
     --h3-font : 1.75em;
     --headings : ;
     --main-text-font :1em ;
-    /* --main-text-line-height : 1.375em; */
+    --main-text-line-height : 1.375em;
 
     --logo-font-mb : ;
     --links-font-mb : 1em;
@@ -433,7 +433,8 @@ footer img {
 /* Start Dark Mode */
 
 .dark-body {
-    background: url(img/Blaq-40.jpg);
+    /* background: url(img/Blaq-40.jpg); */
+    background-color: rgb(1, 1, 7);
     background-attachment: fixed;
     color: white;
     font-family: 'Montserrat', sans-serif;
