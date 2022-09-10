@@ -57,7 +57,7 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: .8em;
     line-height: var( --main-text-line-height);
 }
 
