@@ -57,7 +57,7 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: .8em;
+    font-size: .75em;
     line-height: var( --main-text-line-height);
 }
 
@@ -402,7 +402,7 @@ footer img {
 }
 
 .hero-section .hero-text h1{
-    font-size: 70px;
+    font-size: 65px;
 }
 
 .contact-heading h4 {
@@ -437,9 +437,9 @@ footer img {
     background-attachment: fixed;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: var(--main-text-font);
+    font-size: .75em;
     line-height: var( --main-text-line-height);
-    transition: all .6s ease-in;
+    transition: all .2s ease-in;
 }
 
 .dark-section-3 {
