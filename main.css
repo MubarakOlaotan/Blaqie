@@ -170,6 +170,7 @@ button:hover {
     padding: 10em 0;
     line-height: 2;
     color: white;
+    overflow: hidden;
 }
 
 .section-1 .text {
