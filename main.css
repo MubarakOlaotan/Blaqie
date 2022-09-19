@@ -59,6 +59,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: .8em;
     line-height: var( --main-text-line-height);
+    overflow-x: hidden;
 }
 
 
